@@ -10,72 +10,84 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Welcome to Lincoln's Pizza</h1>
+        <h1>Welcome to Lincoln's Pizza!</h1>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <form class="pizzaForm">
-            <div class="form-group">
-              <label for="customerName">Full Name:</label>
-              <input id="customerName" class="form-control" type="text" required>
+      <form class="pizzaForm">
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="customerName">Full Name:</label>
+                <input id="customerName" class="form-control" type="text" required>
+              </div>
+
+              <div class="form-group">
+                <label for="streetAddress">Street Address:</label>
+                <input id="streetAddress" class="form-control" type="text" required>
+              </div>
+
+              <div class="form-group">
+                <label for="cityStateZipAddress">City, State Zip Code:</label>
+                <input id="cityStateZipAddress" class="form-control" type="text" required>
+              </div>
+
+              Picture right ****************
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <p>Step 1: Pick your size:</p>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="size" value="small" checked> Small (10")
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="size" value="medium"> Medium (12")
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="size" value="large"> Large (14")
+                </label>
+              </div>
             </div>
 
-            <div class="form-group">
-              <label for="streetAddress">Street Address:</label>
-              <input id="streetAddress" class="form-control" type="text" required>
+            <div class="col-md-4">
+              <div class="form-group">
+                <p>Step 2: Pick your sauce:</p>
+                <input type="checkbox" name="pizzaSauce" value="pesto">Pesto sauce<br>
+                <input type="checkbox" name="pizzaSauce" value="garlic">Garlic Parmesan White sauce<br>
+                <input type="checkbox" name="pizzaSauce" value="marinara">Marinara sauce<br>
+                <input type="checkbox" name="pizzaSauce" value="bbq">BBQ sauce<br>
+                <input type="checkbox" name="pizzaSauce" value="alfredo">Alfredo sauce<br>
+              </div>
             </div>
 
-            <div class="form-group">
-              <label for="cityStateZipAddress">City, WA Zip Code:</label>
-              <input id="cityStateZipAddress" class="form-control" type="text" required>
+            <div class="col-md-4">
+              <div class="form-group">
+                <p>Step 3: Pick your toppings:</p>
+                <input type="checkbox" name="toppings" value="pepperoni">Pepperoni<br>
+                <input type="checkbox" name="toppings" value="ham">Ham<br>
+                <input type="checkbox" name="toppings" value="sausage">Italian Sausage<br>
+                <input type="checkbox" name="toppings" value="bacon">Bacon<br>
+                <input type="checkbox" name="toppings" value="chicken">Premium Chicken<br>
+                <input type="checkbox" name="toppings" value="jalapeno">Jalapeno Peppers<br>
+                <input type="checkbox" name="toppings" value="pineapple">Pineapple<br>
+                <input type="checkbox" name="toppings" value="cheese">Feta Cheese<br>
+                <input type="checkbox" name="toppings" value="spinach">Spinach<br>
+                <input type="checkbox" name="toppings" value="mushrooms">Mushrooms<br>
+              </div>
             </div>
+          </div>
 
-            <p>Step 1: Pick your size:</p>
-            <div class="radio">
-              <label>
-                <input type="radio" name="size" value="small" checked> Small (10")
-              </label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="size" value="medium"> Medium (12")
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="size" value="large"> Large (14")
-              </label>
-            </div>
-
-            <div class="form-group">
-              <p>Step 2: Pick your sauce!</p>
-              <input type="checkbox" name="pizzaSauce" value="pesto">Pesto sauce<br>
-              <input type="checkbox" name="pizzaSauce" value="garlic">Garlic Parmesan White sauce<br>
-              <input type="checkbox" name="pizzaSauce" value="marinara">Marinara sauce<br>
-              <input type="checkbox" name="pizzaSauce" value="bbq">BBQ sauce<br>
-              <input type="checkbox" name="pizzaSauce" value="alfredo">Alfredo sauce<br>
-            </div>
-
-            <div class="form-group">
-              <p>Step 3: Pick your toppings!</p>
-              <input type="checkbox" name="toppings" value="pepperoni">Pepperoni<br>
-              <input type="checkbox" name="toppings" value="ham">Ham<br>
-              <input type="checkbox" name="toppings" value="sausage">Italian Sausage<br>
-              <input type="checkbox" name="toppings" value="bacon">Bacon<br>
-              <input type="checkbox" name="toppings" value="chicken">Premium Chicken<br>
-              
-
-
-
-
-
-
-
-
-
-
-          </form>
+          <button type="submit">Submit your order</button>
         </div>
-      </div>
+      </form>
+
+      
     </div>
   </body>
 </html>
