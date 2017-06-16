@@ -6,9 +6,16 @@ function Pizza (size, sauce, topping) {
 }
 
 Pizza.prototype.customerPizza = function() {
-  return "Size:" + " " + this.pizzaSize1 + "<br>" + "Sauce:" + " " + this.sauce + "<br>" + "Topping:" + " " + this.topping + "<br>" ;
+  return "Size:" + " " + this.pizzaSize1 + " " + "<br>" + "Sauce(s):" + " " + this.sauce + " " + "<br>" + "Topping(s):" + " " + this.topping + " " + "<br>";
 };
 
+function Price (price) {
+  this.price = price;
+}
+
+Price.prototype.totalPizzaCost = function () {
+  return "$" + " " + this.price * 1.10;
+}
 // interface logic
 
 $(document).ready(function() {
@@ -32,9 +39,22 @@ $(document).ready(function() {
     var myPizza = new Pizza(pizzaSize, pizzaSauce, pizzaTopping);
     myPizza.customerPizza();
 
-    alert(myPizza.customerPizza());
-    console.log("hello");
-    $("#finalOrder").show(myPizza.customerPizza());
     $("#finalOrder").append(myPizza.customerPizza());
+    $("#finalOrder").show(myPizza.customerPizza());
+
+    if (pizzaSize === "Small") {
+      var pizzaSize = 10;
+    } else if (pizzaSize === "Medium") {
+      var pizzaSize = 15;
+    } else if (pizzaSize === "Large") {
+      var pizzaSize = 20;
+    }
+
+    var cost = new Price(pizzaSize);
+    cost.totalPizzaCost();
+
+    $("#cost").append(cost.totalPizzaCost());
+    $("#cost").show(cost.totalPizzaCost());
+
   });
 });
