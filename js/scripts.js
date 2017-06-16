@@ -55,6 +55,7 @@ $(document).ready(function() {
 
     $("#cost").append(cost.totalPizzaCost());
     $("#cost").show(cost.totalPizzaCost());
+    $(".totalForm").hide();
 
   });
 });

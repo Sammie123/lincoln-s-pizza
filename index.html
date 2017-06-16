@@ -12,6 +12,7 @@
       <div class="jumbotron">
         <h1>Welcome to Lincoln's Pizza!</h1>
       </div>
+      <img src="img/pizza.jpg">
       <div class="row">
         <div class="col-md-6">
           <form class="pizzaForm">
@@ -29,55 +30,60 @@
               <label for="cityStateZipAddress">City, State Zip Code:</label>
               <input id="cityStateZipAddress" class="form-control" type="text">
             </div>
-            Picture right ****************
           </form>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-4">
-          <p>Step 1: Pick your size:</p>
-          <div class="radio">
-            <label>
-              <input type="radio" name="size" value="Small" checked> Small (10")
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="size" value="Medium"> Medium (12")
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="size" value="Large"> Large (14")
-            </label>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="form-group">
-            <p>Step 2: Pick your sauce:</p>
-            <input type="checkbox" name="pizzaSauce" value="Pesto">Pesto sauce<br>
-            <input type="checkbox" name="pizzaSauce" value="Garlic Parmesan White Sauce">Garlic Parmesan White sauce<br>
-            <input type="checkbox" name="pizzaSauce" value="Marinara">Marinara sauce<br>
-            <input type="checkbox" name="pizzaSauce" value="Bbq">BBQ sauce<br>
-            <input type="checkbox" name="pizzaSauce" value="Alfredo">Alfredo sauce<br>
+          <div class="well">
+            <p>Step 1: Pick your size:</p>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="Small" checked> Small (10")
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="Medium"> Medium (12")
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="Large"> Large (14")
+              </label>
+            </div>
           </div>
         </div>
 
         <div class="col-md-4">
-          <div class="form-group">
-            <p>Step 3: Pick your toppings:</p>
-            <input type="checkbox" name="toppings" value="Pepperoni">Pepperoni<br>
-            <input type="checkbox" name="toppings" value="Ham">Ham<br>
-            <input type="checkbox" name="toppings" value="Sausage">Italian Sausage<br>
-            <input type="checkbox" name="toppings" value="Bacon">Bacon<br>
-            <input type="checkbox" name="toppings" value="Chicken">Premium Chicken<br>
-            <input type="checkbox" name="toppings" value="Jalapeno">Jalapeno Peppers<br>
-            <input type="checkbox" name="toppings" value="Pineapple">Pineapple<br>
-            <input type="checkbox" name="toppings" value="Cheese">Feta Cheese<br>
-            <input type="checkbox" name="toppings" value="Spinach">Spinach<br>
-            <input type="checkbox" name="toppings" value="Mushrooms">Mushrooms<br>
+          <div class="well">
+            <div class="form-group">
+              <p>Step 2: Pick your sauce:</p>
+              <input type="checkbox" name="pizzaSauce" value="Pesto">Pesto sauce<br>
+              <input type="checkbox" name="pizzaSauce" value="Garlic Parmesan White Sauce">Garlic Parmesan White sauce<br>
+              <input type="checkbox" name="pizzaSauce" value="Marinara">Marinara sauce<br>
+              <input type="checkbox" name="pizzaSauce" value="Bbq">BBQ sauce<br>
+              <input type="checkbox" name="pizzaSauce" value="Alfredo">Alfredo sauce<br>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="well">
+            <div class="form-group">
+              <p>Step 3: Pick your toppings:</p>
+              <input type="checkbox" name="toppings" value="Pepperoni">Pepperoni<br>
+              <input type="checkbox" name="toppings" value="Ham">Ham<br>
+              <input type="checkbox" name="toppings" value="Sausage">Italian Sausage<br>
+              <input type="checkbox" name="toppings" value="Bacon">Bacon<br>
+              <input type="checkbox" name="toppings" value="Chicken">Premium Chicken<br>
+              <input type="checkbox" name="toppings" value="Jalapeno">Jalapeno Peppers<br>
+              <input type="checkbox" name="toppings" value="Pineapple">Pineapple<br>
+              <input type="checkbox" name="toppings" value="Cheese">Feta Cheese<br>
+              <input type="checkbox" name="toppings" value="Spinach">Spinach<br>
+              <input type="checkbox" name="toppings" value="Mushrooms">Mushrooms<br>
+            </div>
           </div>
         </div>
       </div>
@@ -90,8 +96,8 @@
       </span>
 
       <span id="cost">
-        <p><span id="customerName">,</span></p>
-        <p>This is your total cost:</p>
+        <p><span id="customerName"></span></p>
+        <h2>This is your total cost:</h2>
       </span>
 
     </div>

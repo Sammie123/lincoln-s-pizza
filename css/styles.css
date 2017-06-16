@@ -5,3 +5,17 @@
 #cost {
   display: none;
 }
+
+img {
+  float: right;
+  width: 400px;
+  height: 200px;
+}
+
+.totalForm {
+  font-size: 40px;
+}
+
+.jumbotron {
+  background: lightblue;
+}
