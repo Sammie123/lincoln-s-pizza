@@ -8,6 +8,15 @@
 
 _{A pizza website where the customer enter their name, address, and the different sauces and toppings for their pizza in a form format. I used the checkbox feature where the customer can choose as many of the sauces and toppings as they want. Once done, the customer submits the order and display a summary of the chosen sauces and toppings along with the total price. This website is an exercise for Epicodus students to challenge using contructors, objects, and prototype.}_
 
+## Specifications
+
+* _User chooses size, sauce, and toppings for their custom pizza_
+* _Example:_
+
+|Input|Output|
+|---|---|---|
+|User pick the size (small, medium, large), sauces, and toppings|The price of the pizza depends on the size. Small = 10, medium = 15, large = 20|
+
 ## What's included
 Within the repository you'll find the following directories and files:
 
