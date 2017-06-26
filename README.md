@@ -14,7 +14,6 @@ _{A pizza website where the customer enter their name, address, and the differen
 * _Example:_
 
 |Input|Output|
-|---|---|---|
 |User pick the size (small, medium, large), sauces, and toppings|The price of the pizza depends on the size. Small = 10, medium = 15, large = 20|
 
 ## What's included
